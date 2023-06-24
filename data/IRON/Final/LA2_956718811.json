@@ -1,0 +1,1699 @@
+{
+    "metadata": {
+        "dataVersion": "2",
+        "matchId": "LA2_956718811",
+        "participants": [
+            "r3_L30aD0djdxtaItyReDtFFChRTNp4UiciIbO8m8qOD06aVQJTYPBTo91zIRd_mFpR-Qo91pCy02w",
+            "prMxp5sLZuk7IJVWMyqQhVnDit8AEA0sAiuvCboe40HEJL8PSmPbx2ERHTNLhQshaaqsYclGDveRzg",
+            "38A4Q_t_47jdNzaYldFFy2nZIOliDODrAfxVDZc3vycpc1JghE7huYHnyKXC3wah59A6QERlFx9X1w",
+            "Q93zAI9mzeJNNHWSut4Q1SeAxj3ElhTH9hGz4ZJqYp8WOKe64NDWLKK8oGNSxDkB0XirH6Vl66zl0Q",
+            "BD7LVfJ0m1dcYgqFKpyjtBgAvqR1cbkrNhPll99A3HSZDb0oD9witwzpwvG_q5aThMlYL0014nmpMA",
+            "PHOJ1GMjmf2s6hjlC87n3VNZlAMO-cC8XhyM_a90WzNG31pex_1EfkaU9NiISSrcRvGWx-XGX1UEew",
+            "byMRw_C9QGzfnuS6UUROuVkkZxUUi17-Z5we8pz_i1pTP2A47JGwHZuxYwQ3h6KysH07rEN0jIWDuQ",
+            "IqeefoxyTzgyDNiQcERYW7yRvYgar0gOHys9LS0sD41RVXIXk5B1bNwovUGD1P03gauOOUadC4pSOQ",
+            "YB_M_qKQRmqB45lEpJK1xi_AU90rtQRhlkQu2suyYjXPin2WTZVUcn3Duc2uzvFOeqyJU1JDALPiSg",
+            "Ma180mMtI94d0Paa2C9pVudyotniyqTYsHl8BSeGTEj-ye7OEknxj9HVZot9oAX-AHHqDSqGr4Yvtw"
+        ]
+    },
+    "info": {
+        "gameCreation": 1608178040000,
+        "gameDuration": 1619278,
+        "gameId": 956718811,
+        "gameMode": "CLASSIC",
+        "gameName": "teambuilder-match-956718811",
+        "gameStartTimestamp": 1608178134955,
+        "gameType": "MATCHED_GAME",
+        "gameVersion": "10.25.350.1724",
+        "mapId": 11,
+        "participants": [
+            {
+                "assists": 1,
+                "baronKills": 0,
+                "bountyLevel": 0,
+                "champExperience": 11012,
+                "champLevel": 13,
+                "championId": 37225015,
+                "championName": "Tryndamere",
+                "championTransform": 0,
+                "consumablesPurchased": 1,
+                "damageDealtToObjectives": 8356,
+                "damageDealtToTurrets": 7441,
+                "damageSelfMitigated": 16707,
+                "deaths": 8,
+                "detectorWardsPlaced": 0,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 7965,
+                "goldSpent": 7200,
+                "individualPosition": "TOP",
+                "inhibitorKills": 0,
+                "item0": 1055,
+                "item1": 6672,
+                "item2": 3006,
+                "item3": 1038,
+                "item4": 1018,
+                "item5": 1042,
+                "item6": 3340,
+                "itemsPurchased": 15,
+                "killingSprees": 0,
+                "kills": 1,
+                "lane": "TOP",
+                "largestCriticalStrike": 493,
+                "largestKillingSpree": 0,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 542,
+                "magicDamageDealt": 0,
+                "magicDamageDealtToChampions": 0,
+                "magicDamageTaken": 8822,
+                "neutralMinionsKilled": 0,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 1,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5008,
+                        "offense": 5005
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8008,
+                                    "var1": 1,
+                                    "var2": 10,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 9111,
+                                    "var1": 285,
+                                    "var2": 40,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 9104,
+                                    "var1": 0,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8299,
+                                    "var1": 636,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8000
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8275,
+                                    "var1": 7,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8210,
+                                    "var1": 0,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8200
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 111131,
+                "physicalDamageDealtToChampions": 10420,
+                "physicalDamageTaken": 13346,
+                "profileIcon": 1149,
+                "puuid": "r3_L30aD0djdxtaItyReDtFFChRTNp4UiciIbO8m8qOD06aVQJTYPBTo91zIRd_mFpR-Qo91pCy02w",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "SOLO",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 13,
+                "spell2Casts": 20,
+                "spell3Casts": 42,
+                "spell4Casts": 5,
+                "summoner1Casts": 1,
+                "summoner1Id": 5182308,
+                "summoner2Casts": 6,
+                "summoner2Id": 104222500,
+                "summonerId": "R_NoOl1yPN0jri2GzMsRkckSnC9aSSlQbmkkOFmIDrHQzmw",
+                "summonerLevel": 66,
+                "summonerName": "NashKaster",
+                "teamEarlySurrendered": false,
+                "teamId": 100,
+                "teamPosition": "TOP",
+                "timeCCingOthers": 4,
+                "timePlayed": 1619,
+                "totalDamageDealt": 123092,
+                "totalDamageDealtToChampions": 13058,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 22210,
+                "totalHeal": 4301,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 139,
+                "totalTimeCCDealt": 33,
+                "totalTimeSpentDead": 245,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 11960,
+                "trueDamageDealtToChampions": 2637,
+                "trueDamageTaken": 41,
+                "turretKills": 2,
+                "unrealKills": 0,
+                "visionScore": 6,
+                "visionWardsBoughtInGame": 0,
+                "wardsKilled": 0,
+                "wardsPlaced": 4,
+                "win": false
+            },
+            {
+                "assists": 3,
+                "baronKills": 0,
+                "bountyLevel": 2,
+                "champExperience": 11326,
+                "champLevel": 13,
+                "championId": 37290552,
+                "championName": "Malphite",
+                "championTransform": 0,
+                "consumablesPurchased": 0,
+                "damageDealtToObjectives": 13482,
+                "damageDealtToTurrets": 0,
+                "damageSelfMitigated": 43410,
+                "deaths": 4,
+                "detectorWardsPlaced": 0,
+                "doubleKills": 1,
+                "dragonKills": 2,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 10920,
+                "goldSpent": 10750,
+                "individualPosition": "JUNGLE",
+                "inhibitorKills": 0,
+                "item0": 3068,
+                "item1": 3742,
+                "item2": 3047,
+                "item3": 3075,
+                "item4": 0,
+                "item5": 0,
+                "item6": 3340,
+                "itemsPurchased": 15,
+                "killingSprees": 2,
+                "kills": 9,
+                "lane": "JUNGLE",
+                "largestCriticalStrike": 19,
+                "largestKillingSpree": 7,
+                "largestMultiKill": 2,
+                "longestTimeSpentLiving": 730,
+                "magicDamageDealt": 76007,
+                "magicDamageDealtToChampions": 13190,
+                "magicDamageTaken": 8173,
+                "neutralMinionsKilled": 78,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 2,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5001,
+                        "flex": 5008,
+                        "offense": 5008
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8229,
+                                    "var1": 1140,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8226,
+                                    "var1": 250,
+                                    "var2": 364,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8210,
+                                    "var1": 10,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8236,
+                                    "var1": 24,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8200
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8138,
+                                    "var1": 30,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8105,
+                                    "var1": 11,
+                                    "var2": 4,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8100
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 37171,
+                "physicalDamageDealtToChampions": 3751,
+                "physicalDamageTaken": 16203,
+                "profileIcon": 539,
+                "puuid": "prMxp5sLZuk7IJVWMyqQhVnDit8AEA0sAiuvCboe40HEJL8PSmPbx2ERHTNLhQshaaqsYclGDveRzg",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "NONE",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 90,
+                "spell2Casts": 66,
+                "spell3Casts": 87,
+                "spell4Casts": 8,
+                "summoner1Casts": 17,
+                "summoner1Id": 106858133,
+                "summoner2Casts": 5,
+                "summoner2Id": 105475752,
+                "summonerId": "LDvzo1_2KPx1wwhZw0ourP_xRWitcodqQ1AUHaaIo6si",
+                "summonerLevel": 96,
+                "summonerName": "Cyberl1nk",
+                "teamEarlySurrendered": false,
+                "teamId": 100,
+                "teamPosition": "JUNGLE",
+                "timeCCingOthers": 43,
+                "timePlayed": 1619,
+                "totalDamageDealt": 122572,
+                "totalDamageDealtToChampions": 17878,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 25212,
+                "totalHeal": 5889,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 61,
+                "totalTimeCCDealt": 786,
+                "totalTimeSpentDead": 103,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 9394,
+                "trueDamageDealtToChampions": 936,
+                "trueDamageTaken": 835,
+                "turretKills": 0,
+                "unrealKills": 0,
+                "visionScore": 18,
+                "visionWardsBoughtInGame": 0,
+                "wardsKilled": 1,
+                "wardsPlaced": 9,
+                "win": false
+            },
+            {
+                "assists": 4,
+                "baronKills": 0,
+                "bountyLevel": 0,
+                "champExperience": 10298,
+                "champLevel": 13,
+                "championId": 37356089,
+                "championName": "Ekko",
+                "championTransform": 0,
+                "consumablesPurchased": 6,
+                "damageDealtToObjectives": 4606,
+                "damageDealtToTurrets": 0,
+                "damageSelfMitigated": 17019,
+                "deaths": 7,
+                "detectorWardsPlaced": 5,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 6654,
+                "goldSpent": 6050,
+                "individualPosition": "MIDDLE",
+                "inhibitorKills": 0,
+                "item0": 3152,
+                "item1": 3047,
+                "item2": 3916,
+                "item3": 0,
+                "item4": 0,
+                "item5": 0,
+                "item6": 3363,
+                "itemsPurchased": 18,
+                "killingSprees": 0,
+                "kills": 1,
+                "lane": "MIDDLE",
+                "largestCriticalStrike": 0,
+                "largestKillingSpree": 0,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 523,
+                "magicDamageDealt": 62787,
+                "magicDamageDealtToChampions": 9875,
+                "magicDamageTaken": 4970,
+                "neutralMinionsKilled": 0,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 3,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5008,
+                        "offense": 5008
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8112,
+                                    "var1": 1010,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8143,
+                                    "var1": 425,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8138,
+                                    "var1": 10,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8135,
+                                    "var1": 902,
+                                    "var2": 3,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8100
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8233,
+                                    "var1": 14,
+                                    "var2": 30,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8236,
+                                    "var1": 24,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8200
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 11616,
+                "physicalDamageDealtToChampions": 1720,
+                "physicalDamageTaken": 19297,
+                "profileIcon": 4832,
+                "puuid": "38A4Q_t_47jdNzaYldFFy2nZIOliDODrAfxVDZc3vycpc1JghE7huYHnyKXC3wah59A6QERlFx9X1w",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "SOLO",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 68,
+                "spell2Casts": 28,
+                "spell3Casts": 41,
+                "spell4Casts": 7,
+                "summoner1Casts": 2,
+                "summoner1Id": 5182308,
+                "summoner2Casts": 4,
+                "summoner2Id": 105475752,
+                "summonerId": "Up8fkqQCKup9VkbEwnOSf70nzZQvnlF90qVh4NLcHpKCQMY",
+                "summonerLevel": 60,
+                "summonerName": "IAmShad0w",
+                "teamEarlySurrendered": false,
+                "teamId": 100,
+                "teamPosition": "MIDDLE",
+                "timeCCingOthers": 27,
+                "timePlayed": 1619,
+                "totalDamageDealt": 76736,
+                "totalDamageDealtToChampions": 11595,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 24548,
+                "totalHeal": 4733,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 107,
+                "totalTimeCCDealt": 325,
+                "totalTimeSpentDead": 185,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 2331,
+                "trueDamageDealtToChampions": 0,
+                "trueDamageTaken": 280,
+                "turretKills": 0,
+                "unrealKills": 0,
+                "visionScore": 12,
+                "visionWardsBoughtInGame": 6,
+                "wardsKilled": 1,
+                "wardsPlaced": 12,
+                "win": false
+            },
+            {
+                "assists": 7,
+                "baronKills": 0,
+                "bountyLevel": 0,
+                "champExperience": 9098,
+                "champLevel": 12,
+                "championId": 37421626,
+                "championName": "Ashe",
+                "championTransform": 0,
+                "consumablesPurchased": 0,
+                "damageDealtToObjectives": 3186,
+                "damageDealtToTurrets": 1633,
+                "damageSelfMitigated": 6120,
+                "deaths": 6,
+                "detectorWardsPlaced": 0,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 7053,
+                "goldSpent": 5550,
+                "individualPosition": "BOTTOM",
+                "inhibitorKills": 0,
+                "item0": 1055,
+                "item1": 3085,
+                "item2": 6677,
+                "item3": 1042,
+                "item4": 1018,
+                "item5": 0,
+                "item6": 3340,
+                "itemsPurchased": 8,
+                "killingSprees": 0,
+                "kills": 1,
+                "lane": "BOTTOM",
+                "largestCriticalStrike": 158,
+                "largestKillingSpree": 0,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 527,
+                "magicDamageDealt": 1004,
+                "magicDamageDealtToChampions": 804,
+                "magicDamageTaken": 1878,
+                "neutralMinionsKilled": 4,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 4,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5008,
+                        "offense": 5005
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8008,
+                                    "var1": 1,
+                                    "var2": 50,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8009,
+                                    "var1": 832,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 9104,
+                                    "var1": 17,
+                                    "var2": 50,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8014,
+                                    "var1": 122,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8000
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8236,
+                                    "var1": 14,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8275,
+                                    "var1": 8,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8200
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 65699,
+                "physicalDamageDealtToChampions": 6299,
+                "physicalDamageTaken": 11391,
+                "profileIcon": 4851,
+                "puuid": "Q93zAI9mzeJNNHWSut4Q1SeAxj3ElhTH9hGz4ZJqYp8WOKe64NDWLKK8oGNSxDkB0XirH6Vl66zl0Q",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "CARRY",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 13,
+                "spell2Casts": 53,
+                "spell3Casts": 12,
+                "spell4Casts": 11,
+                "summoner1Casts": 4,
+                "summoner1Id": 105475752,
+                "summoner2Casts": 4,
+                "summoner2Id": 56930076,
+                "summonerId": "VkUbElHWnNiKpqtNPx4tvgB6CTg7F3UHyC_LYrxAhzQoK4E",
+                "summonerLevel": 88,
+                "summonerName": "Skeree05",
+                "teamEarlySurrendered": false,
+                "teamId": 100,
+                "teamPosition": "BOTTOM",
+                "timeCCingOthers": 29,
+                "timePlayed": 1619,
+                "totalDamageDealt": 70689,
+                "totalDamageDealtToChampions": 7104,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 13946,
+                "totalHeal": 2540,
+                "totalHealsOnTeammates": 525,
+                "totalMinionsKilled": 110,
+                "totalTimeCCDealt": 560,
+                "totalTimeSpentDead": 137,
+                "totalUnitsHealed": 3,
+                "tripleKills": 0,
+                "trueDamageDealt": 3985,
+                "trueDamageDealtToChampions": 0,
+                "trueDamageTaken": 676,
+                "turretKills": 1,
+                "unrealKills": 0,
+                "visionScore": 14,
+                "visionWardsBoughtInGame": 0,
+                "wardsKilled": 2,
+                "wardsPlaced": 6,
+                "win": false
+            },
+            {
+                "assists": 9,
+                "baronKills": 0,
+                "bountyLevel": 0,
+                "champExperience": 8331,
+                "champLevel": 11,
+                "championId": 37487163,
+                "championName": "Swain",
+                "championTransform": 0,
+                "consumablesPurchased": 5,
+                "damageDealtToObjectives": 3722,
+                "damageDealtToTurrets": 1442,
+                "damageSelfMitigated": 12009,
+                "deaths": 6,
+                "detectorWardsPlaced": 2,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 7230,
+                "goldSpent": 6835,
+                "individualPosition": "UTILITY",
+                "inhibitorKills": 0,
+                "item0": 3853,
+                "item1": 2421,
+                "item2": 3047,
+                "item3": 0,
+                "item4": 4633,
+                "item5": 3191,
+                "item6": 3364,
+                "itemsPurchased": 19,
+                "killingSprees": 0,
+                "kills": 2,
+                "lane": "BOTTOM",
+                "largestCriticalStrike": 0,
+                "largestKillingSpree": 0,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 557,
+                "magicDamageDealt": 29034,
+                "magicDamageDealtToChampions": 11115,
+                "magicDamageTaken": 4503,
+                "neutralMinionsKilled": 0,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 5,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5008,
+                        "offense": 5007
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8439,
+                                    "var1": 475,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8446,
+                                    "var1": 420,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8473,
+                                    "var1": 584,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8453,
+                                    "var1": 680,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8400
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8143,
+                                    "var1": 35,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8135,
+                                    "var1": 761,
+                                    "var2": 4,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8100
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 5659,
+                "physicalDamageDealtToChampions": 2014,
+                "physicalDamageTaken": 13212,
+                "profileIcon": 4225,
+                "puuid": "BD7LVfJ0m1dcYgqFKpyjtBgAvqR1cbkrNhPll99A3HSZDb0oD9witwzpwvG_q5aThMlYL0014nmpMA",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "SUPPORT",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 52,
+                "spell2Casts": 40,
+                "spell3Casts": 37,
+                "spell4Casts": 12,
+                "summoner1Casts": 5,
+                "summoner1Id": 145275620,
+                "summoner2Casts": 4,
+                "summoner2Id": 105475752,
+                "summonerId": "sxw4WCnkblGBqGHgDP8ItY1Ac2nr7BrMM4OJK6hjSgfI_xQ",
+                "summonerLevel": 211,
+                "summonerName": "Pache64",
+                "teamEarlySurrendered": false,
+                "teamId": 100,
+                "teamPosition": "UTILITY",
+                "timeCCingOthers": 40,
+                "timePlayed": 1619,
+                "totalDamageDealt": 35676,
+                "totalDamageDealtToChampions": 13536,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 18365,
+                "totalHeal": 5944,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 22,
+                "totalTimeCCDealt": 210,
+                "totalTimeSpentDead": 121,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 981,
+                "trueDamageDealtToChampions": 406,
+                "trueDamageTaken": 649,
+                "turretKills": 0,
+                "unrealKills": 0,
+                "visionScore": 36,
+                "visionWardsBoughtInGame": 3,
+                "wardsKilled": 5,
+                "wardsPlaced": 16,
+                "win": false
+            },
+            {
+                "assists": 9,
+                "baronKills": 0,
+                "bountyLevel": 5,
+                "champExperience": 16641,
+                "champLevel": 17,
+                "championId": 37552700,
+                "championName": "DrMundo",
+                "championTransform": 0,
+                "consumablesPurchased": 1,
+                "damageDealtToObjectives": 16727,
+                "damageDealtToTurrets": 7572,
+                "damageSelfMitigated": 35463,
+                "deaths": 1,
+                "detectorWardsPlaced": 0,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": true,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 11249,
+                "goldSpent": 9250,
+                "individualPosition": "TOP",
+                "inhibitorKills": 1,
+                "item0": 1054,
+                "item1": 3068,
+                "item2": 3047,
+                "item3": 3075,
+                "item4": 3067,
+                "item5": 3211,
+                "item6": 3340,
+                "itemsPurchased": 14,
+                "killingSprees": 1,
+                "kills": 5,
+                "lane": "TOP",
+                "largestCriticalStrike": 15,
+                "largestKillingSpree": 5,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 209,
+                "magicDamageDealt": 82380,
+                "magicDamageDealtToChampions": 19559,
+                "magicDamageTaken": 7897,
+                "neutralMinionsKilled": 8,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 6,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5002,
+                        "offense": 5005
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8437,
+                                    "var1": 1679,
+                                    "var2": 1247,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8446,
+                                    "var1": 2664,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8444,
+                                    "var1": 2469,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8451,
+                                    "var1": 241,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8400
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8304,
+                                    "var1": 10,
+                                    "var2": 3,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8410,
+                                    "var1": 77,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8300
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 53535,
+                "physicalDamageDealtToChampions": 7301,
+                "physicalDamageTaken": 19003,
+                "profileIcon": 4376,
+                "puuid": "PHOJ1GMjmf2s6hjlC87n3VNZlAMO-cC8XhyM_a90WzNG31pex_1EfkaU9NiISSrcRvGWx-XGX1UEew",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "DUO",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 171,
+                "spell2Casts": 97,
+                "spell3Casts": 97,
+                "spell4Casts": 9,
+                "summoner1Casts": 4,
+                "summoner1Id": 5182308,
+                "summoner2Casts": 2,
+                "summoner2Id": 105475752,
+                "summonerId": "xR2HKKllrsKIxKP0MIBpYYwN9kIALHXuDbl1y9FG0eWW2Uc",
+                "summonerLevel": 69,
+                "summonerName": "ElVulKan",
+                "teamEarlySurrendered": false,
+                "teamId": 200,
+                "teamPosition": "TOP",
+                "timeCCingOthers": 19,
+                "timePlayed": 1619,
+                "totalDamageDealt": 138820,
+                "totalDamageDealtToChampions": 26861,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 29552,
+                "totalHeal": 13256,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 162,
+                "totalTimeCCDealt": 205,
+                "totalTimeSpentDead": 10,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 2905,
+                "trueDamageDealtToChampions": 0,
+                "trueDamageTaken": 2651,
+                "turretKills": 3,
+                "unrealKills": 0,
+                "visionScore": 13,
+                "visionWardsBoughtInGame": 0,
+                "wardsKilled": 0,
+                "wardsPlaced": 7,
+                "win": true
+            },
+            {
+                "assists": 4,
+                "baronKills": 1,
+                "bountyLevel": 2,
+                "champExperience": 11510,
+                "champLevel": 14,
+                "championId": 37618237,
+                "championName": "Pantheon",
+                "championTransform": 0,
+                "consumablesPurchased": 3,
+                "damageDealtToObjectives": 19492,
+                "damageDealtToTurrets": 1985,
+                "damageSelfMitigated": 16756,
+                "deaths": 3,
+                "detectorWardsPlaced": 2,
+                "doubleKills": 0,
+                "dragonKills": 1,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": true,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 11136,
+                "goldSpent": 9175,
+                "individualPosition": "JUNGLE",
+                "inhibitorKills": 0,
+                "item0": 6692,
+                "item1": 3117,
+                "item2": 2031,
+                "item3": 1036,
+                "item4": 3067,
+                "item5": 3156,
+                "item6": 3364,
+                "itemsPurchased": 21,
+                "killingSprees": 4,
+                "kills": 11,
+                "lane": "JUNGLE",
+                "largestCriticalStrike": 0,
+                "largestKillingSpree": 4,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 680,
+                "magicDamageDealt": 9193,
+                "magicDamageDealtToChampions": 526,
+                "magicDamageTaken": 6595,
+                "neutralMinionsKilled": 110,
+                "nexusKills": 0,
+                "objectivesStolen": 1,
+                "objectivesStolenAssists": 0,
+                "participantId": 7,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5001,
+                        "flex": 5003,
+                        "offense": 5007
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8112,
+                                    "var1": 1200,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8139,
+                                    "var1": 791,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8138,
+                                    "var1": 18,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8106,
+                                    "var1": 5,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8100
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8233,
+                                    "var1": 17,
+                                    "var2": 20,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8237,
+                                    "var1": 440,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8200
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 90504,
+                "physicalDamageDealtToChampions": 15294,
+                "physicalDamageTaken": 13646,
+                "profileIcon": 3163,
+                "puuid": "byMRw_C9QGzfnuS6UUROuVkkZxUUi17-Z5we8pz_i1pTP2A47JGwHZuxYwQ3h6KysH07rEN0jIWDuQ",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "NONE",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 107,
+                "spell2Casts": 42,
+                "spell3Casts": 31,
+                "spell4Casts": 3,
+                "summoner1Casts": 3,
+                "summoner1Id": 105475752,
+                "summoner2Casts": 14,
+                "summoner2Id": 106858133,
+                "summonerId": "9iMedP8Yzx7zoYldsoW34ew5nT-drKgU1DGyhVDOlmuLSw",
+                "summonerLevel": 87,
+                "summonerName": "ShiShiBossLayan",
+                "teamEarlySurrendered": false,
+                "teamId": 200,
+                "teamPosition": "JUNGLE",
+                "timeCCingOthers": 22,
+                "timePlayed": 1619,
+                "totalDamageDealt": 111238,
+                "totalDamageDealtToChampions": 16350,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 20924,
+                "totalHeal": 9873,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 24,
+                "totalTimeCCDealt": 148,
+                "totalTimeSpentDead": 94,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 11540,
+                "trueDamageDealtToChampions": 529,
+                "trueDamageTaken": 681,
+                "turretKills": 2,
+                "unrealKills": 0,
+                "visionScore": 25,
+                "visionWardsBoughtInGame": 3,
+                "wardsKilled": 3,
+                "wardsPlaced": 7,
+                "win": true
+            },
+            {
+                "assists": 3,
+                "baronKills": 0,
+                "bountyLevel": 3,
+                "champExperience": 14825,
+                "champLevel": 16,
+                "championId": 37683774,
+                "championName": "Yasuo",
+                "championTransform": 0,
+                "consumablesPurchased": 5,
+                "damageDealtToObjectives": 19976,
+                "damageDealtToTurrets": 7085,
+                "damageSelfMitigated": 18549,
+                "deaths": 2,
+                "detectorWardsPlaced": 2,
+                "doubleKills": 1,
+                "dragonKills": 1,
+                "firstBloodAssist": false,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 13422,
+                "goldSpent": 10980,
+                "individualPosition": "MIDDLE",
+                "inhibitorKills": 0,
+                "item0": 3006,
+                "item1": 3153,
+                "item2": 6671,
+                "item3": 1018,
+                "item4": 1055,
+                "item5": 1038,
+                "item6": 3340,
+                "itemsPurchased": 15,
+                "killingSprees": 3,
+                "kills": 11,
+                "lane": "TOP",
+                "largestCriticalStrike": 548,
+                "largestKillingSpree": 5,
+                "largestMultiKill": 2,
+                "longestTimeSpentLiving": 676,
+                "magicDamageDealt": 10322,
+                "magicDamageDealtToChampions": 1808,
+                "magicDamageTaken": 7822,
+                "neutralMinionsKilled": 13,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 8,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5003,
+                        "flex": 5008,
+                        "offense": 5005
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8010,
+                                    "var1": 583,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 9111,
+                                    "var1": 570,
+                                    "var2": 280,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 9104,
+                                    "var1": 12,
+                                    "var2": 20,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8014,
+                                    "var1": 403,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8000
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8139,
+                                    "var1": 970,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8135,
+                                    "var1": 4740,
+                                    "var2": 5,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8100
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 157577,
+                "physicalDamageDealtToChampions": 19132,
+                "physicalDamageTaken": 9972,
+                "profileIcon": 4066,
+                "puuid": "IqeefoxyTzgyDNiQcERYW7yRvYgar0gOHys9LS0sD41RVXIXk5B1bNwovUGD1P03gauOOUadC4pSOQ",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "DUO",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 285,
+                "spell2Casts": 19,
+                "spell3Casts": 100,
+                "spell4Casts": 8,
+                "summoner1Casts": 6,
+                "summoner1Id": 104222500,
+                "summoner2Casts": 3,
+                "summoner2Id": 105475752,
+                "summonerId": "XtoFRRQyA-mKQEBCqs-mQWWuprvb9rW7JkXR37xGM-KgRw",
+                "summonerLevel": 185,
+                "summonerName": "Kaladbolg",
+                "teamEarlySurrendered": false,
+                "teamId": 200,
+                "teamPosition": "MIDDLE",
+                "timeCCingOthers": 25,
+                "timePlayed": 1619,
+                "totalDamageDealt": 177930,
+                "totalDamageDealtToChampions": 21859,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 18063,
+                "totalHeal": 8876,
+                "totalHealsOnTeammates": 0,
+                "totalMinionsKilled": 202,
+                "totalTimeCCDealt": 145,
+                "totalTimeSpentDead": 71,
+                "totalUnitsHealed": 1,
+                "tripleKills": 0,
+                "trueDamageDealt": 10030,
+                "trueDamageDealtToChampions": 918,
+                "trueDamageTaken": 268,
+                "turretKills": 2,
+                "unrealKills": 0,
+                "visionScore": 21,
+                "visionWardsBoughtInGame": 2,
+                "wardsKilled": 1,
+                "wardsPlaced": 8,
+                "win": true
+            },
+            {
+                "assists": 4,
+                "baronKills": 0,
+                "bountyLevel": 0,
+                "champExperience": 8137,
+                "champLevel": 11,
+                "championId": 37749311,
+                "championName": "MissFortune",
+                "championTransform": 0,
+                "consumablesPurchased": 3,
+                "damageDealtToObjectives": 9209,
+                "damageDealtToTurrets": 1770,
+                "damageSelfMitigated": 4747,
+                "deaths": 3,
+                "detectorWardsPlaced": 2,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": false,
+                "firstBloodKill": true,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 7587,
+                "goldSpent": 7325,
+                "individualPosition": "BOTTOM",
+                "inhibitorKills": 1,
+                "item0": 3134,
+                "item1": 6692,
+                "item2": 3009,
+                "item3": 1037,
+                "item4": 1018,
+                "item5": 0,
+                "item6": 3340,
+                "itemsPurchased": 15,
+                "killingSprees": 1,
+                "kills": 2,
+                "lane": "BOTTOM",
+                "largestCriticalStrike": 517,
+                "largestKillingSpree": 2,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 681,
+                "magicDamageDealt": 2783,
+                "magicDamageDealtToChampions": 856,
+                "magicDamageTaken": 6453,
+                "neutralMinionsKilled": 0,
+                "nexusKills": 1,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 1,
+                "participantId": 9,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5008,
+                        "offense": 5005
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8128,
+                                    "var1": 338,
+                                    "var2": 9,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8126,
+                                    "var1": 347,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8138,
+                                    "var1": 7,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8135,
+                                    "var1": 1032,
+                                    "var2": 3,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8100
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 9111,
+                                    "var1": 346,
+                                    "var2": 120,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 9104,
+                                    "var1": 17,
+                                    "var2": 20,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8000
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 49722,
+                "physicalDamageDealtToChampions": 10866,
+                "physicalDamageTaken": 5493,
+                "profileIcon": 4858,
+                "puuid": "YB_M_qKQRmqB45lEpJK1xi_AU90rtQRhlkQu2suyYjXPin2WTZVUcn3Duc2uzvFOeqyJU1JDALPiSg",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "CARRY",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 43,
+                "spell2Casts": 12,
+                "spell3Casts": 23,
+                "spell4Casts": 5,
+                "summoner1Casts": 2,
+                "summoner1Id": 105475752,
+                "summoner2Casts": 3,
+                "summoner2Id": 56930076,
+                "summonerId": "wKEH3TSNspbbTzbkqdQ6qcErAgS5wJ3sFpg6dGeVdH9O0YE",
+                "summonerLevel": 46,
+                "summonerName": "not loki",
+                "teamEarlySurrendered": false,
+                "teamId": 200,
+                "teamPosition": "BOTTOM",
+                "timeCCingOthers": 5,
+                "timePlayed": 1619,
+                "totalDamageDealt": 60237,
+                "totalDamageDealtToChampions": 11999,
+                "totalDamageShieldedOnTeammates": 0,
+                "totalDamageTaken": 12031,
+                "totalHeal": 4679,
+                "totalHealsOnTeammates": 405,
+                "totalMinionsKilled": 97,
+                "totalTimeCCDealt": 71,
+                "totalTimeSpentDead": 78,
+                "totalUnitsHealed": 3,
+                "tripleKills": 0,
+                "trueDamageDealt": 7731,
+                "trueDamageDealtToChampions": 276,
+                "trueDamageTaken": 84,
+                "turretKills": 2,
+                "unrealKills": 0,
+                "visionScore": 17,
+                "visionWardsBoughtInGame": 2,
+                "wardsKilled": 1,
+                "wardsPlaced": 9,
+                "win": true
+            },
+            {
+                "assists": 15,
+                "baronKills": 0,
+                "bountyLevel": 0,
+                "champExperience": 10307,
+                "champLevel": 13,
+                "championId": 37814848,
+                "championName": "Alistar",
+                "championTransform": 0,
+                "consumablesPurchased": 2,
+                "damageDealtToObjectives": 139,
+                "damageDealtToTurrets": 139,
+                "damageSelfMitigated": 18171,
+                "deaths": 5,
+                "detectorWardsPlaced": 0,
+                "doubleKills": 0,
+                "dragonKills": 0,
+                "firstBloodAssist": true,
+                "firstBloodKill": false,
+                "firstTowerAssist": false,
+                "firstTowerKill": false,
+                "gameEndedInEarlySurrender": false,
+                "gameEndedInSurrender": false,
+                "goldEarned": 7832,
+                "goldSpent": 6700,
+                "individualPosition": "UTILITY",
+                "inhibitorKills": 0,
+                "item0": 3190,
+                "item1": 3860,
+                "item2": 3075,
+                "item3": 2003,
+                "item4": 3117,
+                "item5": 0,
+                "item6": 3340,
+                "itemsPurchased": 12,
+                "killingSprees": 1,
+                "kills": 2,
+                "lane": "BOTTOM",
+                "largestCriticalStrike": 3,
+                "largestKillingSpree": 2,
+                "largestMultiKill": 1,
+                "longestTimeSpentLiving": 927,
+                "magicDamageDealt": 10378,
+                "magicDamageDealtToChampions": 5099,
+                "magicDamageTaken": 7425,
+                "neutralMinionsKilled": 0,
+                "nexusKills": 0,
+                "objectivesStolen": 0,
+                "objectivesStolenAssists": 0,
+                "participantId": 10,
+                "pentaKills": 0,
+                "perks": {
+                    "statPerks": {
+                        "defense": 5002,
+                        "flex": 5002,
+                        "offense": 5008
+                    },
+                    "styles": [
+                        {
+                            "description": "primaryStyle",
+                            "selections": [
+                                {
+                                    "perk": 8439,
+                                    "var1": 765,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8463,
+                                    "var1": 737,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8444,
+                                    "var1": 912,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8451,
+                                    "var1": 179,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8400
+                        },
+                        {
+                            "description": "subStyle",
+                            "selections": [
+                                {
+                                    "perk": 8345,
+                                    "var1": 3,
+                                    "var2": 0,
+                                    "var3": 0
+                                },
+                                {
+                                    "perk": 8347,
+                                    "var1": 0,
+                                    "var2": 0,
+                                    "var3": 0
+                                }
+                            ],
+                            "style": 8300
+                        }
+                    ]
+                },
+                "physicalDamageDealt": 5956,
+                "physicalDamageDealtToChampions": 910,
+                "physicalDamageTaken": 9725,
+                "profileIcon": 7,
+                "puuid": "Ma180mMtI94d0Paa2C9pVudyotniyqTYsHl8BSeGTEj-ye7OEknxj9HVZot9oAX-AHHqDSqGr4Yvtw",
+                "quadraKills": 0,
+                "riotIdName": "",
+                "riotIdTagline": "",
+                "role": "SUPPORT",
+                "sightWardsBoughtInGame": 0,
+                "spell1Casts": 33,
+                "spell2Casts": 30,
+                "spell3Casts": 20,
+                "spell4Casts": 5,
+                "summoner1Casts": 4,
+                "summoner1Id": 105475752,
+                "summoner2Casts": 4,
+                "summoner2Id": 104222500,
+                "summonerId": "FrYOfpm34gCK1Lfhsqa-ptid8H0jvONsJw-cwhsnpnvb3UE",
+                "summonerLevel": 56,
+                "summonerName": "FbacH018",
+                "teamEarlySurrendered": false,
+                "teamId": 200,
+                "teamPosition": "UTILITY",
+                "timeCCingOthers": 41,
+                "timePlayed": 1619,
+                "totalDamageDealt": 21386,
+                "totalDamageDealtToChampions": 6770,
+                "totalDamageShieldedOnTeammates": 294,
+                "totalDamageTaken": 19444,
+                "totalHeal": 7600,
+                "totalHealsOnTeammates": 4543,
+                "totalMinionsKilled": 29,
+                "totalTimeCCDealt": 92,
+                "totalTimeSpentDead": 130,
+                "totalUnitsHealed": 5,
+                "tripleKills": 0,
+                "trueDamageDealt": 5052,
+                "trueDamageDealtToChampions": 760,
+                "trueDamageTaken": 2294,
+                "turretKills": 0,
+                "unrealKills": 0,
+                "visionScore": 27,
+                "visionWardsBoughtInGame": 0,
+                "wardsKilled": 1,
+                "wardsPlaced": 19,
+                "win": true
+            }
+        ],
+        "platformId": "LA2",
+        "queueId": 420,
+        "teams": [
+            {
+                "bans": [
+                    {
+                        "championId": 875,
+                        "pickTurn": 1
+                    },
+                    {
+                        "championId": 39,
+                        "pickTurn": 2
+                    },
+                    {
+                        "championId": 202,
+                        "pickTurn": 3
+                    },
+                    {
+                        "championId": 236,
+                        "pickTurn": 4
+                    },
+                    {
+                        "championId": 25,
+                        "pickTurn": 5
+                    }
+                ],
+                "objectives": {
+                    "baron": {
+                        "first": false,
+                        "kills": 0
+                    },
+                    "champion": {
+                        "first": false,
+                        "kills": 14
+                    },
+                    "dragon": {
+                        "first": true,
+                        "kills": 2
+                    },
+                    "inhibitor": {
+                        "first": false,
+                        "kills": 0
+                    },
+                    "riftHerald": {
+                        "first": false,
+                        "kills": 0
+                    },
+                    "tower": {
+                        "first": false,
+                        "kills": 3
+                    }
+                },
+                "teamId": 100,
+                "win": false
+            },
+            {
+                "bans": [
+                    {
+                        "championId": 202,
+                        "pickTurn": 6
+                    },
+                    {
+                        "championId": 555,
+                        "pickTurn": 7
+                    },
+                    {
+                        "championId": 58,
+                        "pickTurn": 8
+                    },
+                    {
+                        "championId": 106,
+                        "pickTurn": 9
+                    },
+                    {
+                        "championId": 33,
+                        "pickTurn": 10
+                    }
+                ],
+                "objectives": {
+                    "baron": {
+                        "first": true,
+                        "kills": 1
+                    },
+                    "champion": {
+                        "first": true,
+                        "kills": 31
+                    },
+                    "dragon": {
+                        "first": false,
+                        "kills": 2
+                    },
+                    "inhibitor": {
+                        "first": true,
+                        "kills": 2
+                    },
+                    "riftHerald": {
+                        "first": true,
+                        "kills": 2
+                    },
+                    "tower": {
+                        "first": true,
+                        "kills": 10
+                    }
+                },
+                "teamId": 200,
+                "win": true
+            }
+        ]
+    }
+}
