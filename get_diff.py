@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 
 def calculate_event_differences(df):
+    """Recibe un df y resta sucesivamente las filas 1 y 2, agrupando en un nuevo df el resultante de la resta.
+    La función es utilizada para agrupar los datos de una partida por equipo para obtener la diferencia de las estadísticas.
+    Mantiene el target de la primera fila"""    
     # Seleccionar todas las columnas excepto "matchId" y "target"
     columnas_no_matchId = df.columns[~df.columns.isin(["matchId", "target"])]
 
