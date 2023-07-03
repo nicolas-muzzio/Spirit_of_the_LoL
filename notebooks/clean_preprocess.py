@@ -1,9 +1,9 @@
 import pandas as pd
-from sklearn.preprocessing import RobustScaler
-import numpy as np
+from sklearn.preprocessing import RobustScaler, MinMaxScaler, StandardScales
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
 
 
-#esta no funciona
 def specify_interest_features(df):
     # Get columns that start with 'monsterType'
     monster_type_cols = df.filter(like='monsterType', axis=1).columns.tolist()
@@ -21,21 +21,38 @@ def specify_interest_features(df):
     
     return all_df
 
+#Remover duplicados
 def remove_duplicates(df):
     print(f"Duplicates dropped: {df.duplicated().sum()}")
     df = df.drop_duplicates()
     return df
 
-def normalize(df):
-    normalized_array = df.div(df.sum(axis=1), axis=0)
-    return normalized_array
+#Escalar
+def scale(df):
+    scaler = RobustScaler()
+    scaled_array = scaler.fit_transform(df)
+    scaled_df = pd.DataFrame(scaled_array, columns=df.columns)
+    return scaled_df
 
-def replace_nan_with_zero(df):
-    df_cleaned = df.replace(np.nan, 0)
+def remove_nan_rows(df):
+    df_cleaned = df.dropna()
     return df_cleaned
 
-def preprocess(df):
+#Función que debemos llamar para aplicar el preproceso al df deseado ----> Cambiar esto por Pipeline
+"""def preprocess(df):
+    #df = specify_interest_featuresl
     df = remove_duplicates(df)
-    df_cleaned = replace_nan_with_zero(df)
-    #normalized_array = normalize(df_cleaned.drop("target", axis=1))
-    return df_cleaned, df_cleaned["target"]
+    df = scale(df)
+    df = remove_nan_rows(df)
+    return df"""
+
+#Función que llamaremos para aplicar el preproceso 
+def create_preprocessor():
+    # Preprocessing pipeline with lambda function to remove duplicates
+    preprocessor = Pipeline([
+        ('remove_duplicates', lambda df: df.drop_duplicates()),
+        ('imputer', SimpleImputer(strategy='constant', fill_value=0)),
+        ('scaling', RobustScaler())
+    ])
+
+    return preprocessor
