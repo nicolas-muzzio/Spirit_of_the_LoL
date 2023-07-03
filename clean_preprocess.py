@@ -1,6 +1,7 @@
 import pandas as pd
-from sklearn.preprocessing import RobustScaler
-
+from sklearn.preprocessing import RobustScaler, MinMaxScaler, StandardScales
+from sklearn.impute import SimpleImputer
+from sklearn.pipeline import Pipeline
 
 
 def specify_interest_features(df):
@@ -37,10 +38,22 @@ def remove_nan_rows(df):
     df_cleaned = df.dropna()
     return df_cleaned
 
-#Función que debemos llamar para aplicar el preproceso al df deseado
-def preprocess(df):
+#Función que debemos llamar para aplicar el preproceso al df deseado ----> Cambiar esto por Pipeline
+"""def preprocess(df):
     #df = specify_interest_featuresl
     df = remove_duplicates(df)
     df = scale(df)
     df = remove_nan_rows(df)
-    return df
+    return df"""
+
+#Función que llamaremos para aplicar el preproceso 
+def create_preprocessor():
+    # Preprocessing pipeline with lambda function to remove duplicates
+    preprocessor = Pipeline([
+        ('remove_duplicates', lambda df: df.drop_duplicates()),
+        ('imputer', SimpleImputer(strategy='constant', fill_value=0)),
+        ('scaling', RobustScaler())
+    ])
+
+    return preprocessor
+
