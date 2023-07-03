@@ -2,6 +2,8 @@ import pandas as pd
 from sklearn.preprocessing import RobustScaler, MinMaxScaler, StandardScales
 from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
+from sklearn.base import TransformerMixin, BaseEstimator
+from sklearn.exceptions import NotFittedError
 
 
 def specify_interest_features(df):
@@ -45,6 +47,43 @@ def remove_nan_rows(df):
     df = scale(df)
     df = remove_nan_rows(df)
     return df"""
+
+class CustomStandardizer(TransformerMixin, BaseEstimator):
+
+    def __init__(self):
+        pass
+
+    def fit(self, X, y=None):
+        '''
+        Stores what needs to be stored as instance attributes. 
+        ReturnS "self" to allow chaining fit and transform.
+        '''
+        # $CHALLENGIFY_BEGIN
+        self.means = X.mean()
+        self.stds = X.std(ddof=0)
+
+        # Return self to allow chaining & fit_transform
+        return self
+        # $CHALLENGIFY_END
+    
+    def transform(self, X, y=None): 
+        # $CHALLENGIFY_BEGIN
+        if not (hasattr(self, "means") and hasattr(self, "stds")):
+            raise NotFittedError("This CustomStandardScaler instance is not fitted yet. Call 'fit' with the appropriate arguments before using this estimator.")
+
+        # Standardization
+        standardized_features = (X - self.means) / self.stds
+
+        return standardized_features
+        # $CHALLENGIFY_END
+    
+    # $DELETE_BEGIN
+    def inverse_transform(self, X, y=None):
+        if not (hasattr(self, "means") and hasattr(self, "stds")):
+            raise NotFittedError("This CustomStandardScaler instance is not fitted yet. Call 'fit' with the appropriate arguments before using this estimator.")
+
+        return X * self.stds + self.means
+    # $DELETE_END
 
 #Función que llamaremos para aplicar el preproceso 
 def create_preprocessor():
