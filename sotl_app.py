@@ -25,7 +25,7 @@ load_dotenv()
 #Get value stored in variable
 api_key = os.getenv("API_KEY")
 
-def fetch_match(puuid, api_key, region, match_type, count = 4):
+def fetch_match(puuid, api_key, region, match_type, count = 1):
     """
     Function to get the list of match IDs
     """
@@ -58,9 +58,9 @@ def find_image(champion):
     """
     Try to find the champion image, if it does not exist return a poro image
     """
-    if os.path.exists(f"champion/{champion}.png"):
-        return f"champion/{champion}.png"
-    return  f"champion/4155.png"
+    if os.path.exists(f"images/champion/{champion}.png"):
+        return f"images/champion/{champion}.png"
+    return  f"images/champion/4155.png"
 
 #Dict with code and game modes
 queues_dict = {
@@ -225,7 +225,7 @@ path_puuid = f'https://{region}.api.riotgames.com/lol/summoner/v4/summoners/by-n
 puuid = requests.get(path_puuid).json()['puuid']
 
 #match id obtention
-matches = fetch_match(puuid, api_key, region, match_type, count = 3)
+matches = fetch_match(puuid, api_key, region, match_type, count = 1)
 
 if matches == []:
     st.write("No matches found, please check introduced data")
