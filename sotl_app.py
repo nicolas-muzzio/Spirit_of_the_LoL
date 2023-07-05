@@ -62,6 +62,16 @@ def find_image(champion):
         return f"images/champion/{champion}.png"
     return  f"images/champion/4155.png"
 
+def unique_tier(solo_tier,flex_tier):
+    """
+    Defines a unique tier for the user
+    """
+    if solo_tier != 0:
+        return solo_tier
+    elif flex_tier != 0:
+        return flex_tier
+    return "SILVER"
+
 #Dict with code and game modes
 queues_dict = {
     0: None,
@@ -220,12 +230,44 @@ region = region_dict[chosen_region]
 #Converts user input to region ID
 match_type = match_type_list[chosen_match_type]
 
-#puuid obtention
+#puuid and encrypted_summonerID obtention
 path_puuid = f'https://{region}.api.riotgames.com/lol/summoner/v4/summoners/by-name/{summoner_name}?api_key={api_key}'
-puuid = requests.get(path_puuid).json()['puuid']
+summoner_data = requests.get(path_puuid).json()
+puuid = summoner_data['puuid']
+encrypted_summonerID = summoner_data['id']
+
+#Tiers obtention -> needed to know which model we need to use
+path_tier = f"https://{region}.api.riotgames.com/lol/league/v4/entries/by-summoner/{encrypted_summonerID}?api_key={api_key}"
+ranked_tiers = requests.get(path_tier).json()
+
+#Obtain the tier info if the summoner has any
+no_tier = False
+solo_tier = 0
+flex_tier = 0
+if ranked_tiers == []:
+    no_tier = True
+else:
+    for i in range(len(ranked_tiers)):
+        if ranked_tiers[i]["queueType"] == "RANKED_SOLO_5x5":
+            solo_tier = ranked_tiers[i]["tier"]
+        else:
+            flex_tier = ranked_tiers[i]["tier"]
 
 #match id obtention
 matches = fetch_match(puuid, api_key, region, match_type, count = 1)
+
+#Display Ranks
+if no_tier:
+    st.markdown("##### You do not have a ranked tier")
+else:
+    columns2 = st.columns(4)
+    if solo_tier != 0:
+        columns2[0].markdown(f"##### Your Solo Queue Tier is {solo_tier}")
+    if flex_tier != 0:
+        columns2[2].markdown(f"##### Your Flex Queue Tier is {flex_tier}")
+
+st.write(f" ")
+st.write(f" ")
 
 if matches == []:
     st.write("No matches found, please check introduced data")
@@ -255,7 +297,7 @@ else:
         #Determines the user champion
         user_champion = match_final["info"]["participants"][user_participant]["championName"]
 
-
+        #####PREPO OF MATCH_TIMELINE
 
         with col1:
             st.markdown("##### Date")
