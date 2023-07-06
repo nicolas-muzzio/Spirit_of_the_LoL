@@ -64,7 +64,8 @@ def find_image(champion):
 
 def unique_tier(solo_tier,flex_tier):
     """
-    Defines a unique tier for the user in order to get
+    Defines a unique tier for the user in order to get the correct model
+    If the user does not have a ranked or solo tier, it returns "SILVER"
     """
     if solo_tier != 0:
         return solo_tier
