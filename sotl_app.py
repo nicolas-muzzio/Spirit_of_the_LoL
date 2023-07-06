@@ -64,7 +64,7 @@ def find_image(champion):
 
 def unique_tier(solo_tier,flex_tier):
     """
-    Defines a unique tier for the user
+    Defines a unique tier for the user in order to get
     """
     if solo_tier != 0:
         return solo_tier
@@ -346,7 +346,12 @@ else:
             with col8:
                 st.write(f":red[{champion2}]")
 
-
+        """
+        if user_participant < 5:
+            proba = api_model_response[1]
+        if user_participant > 4: #if player is from team 2, its probability of winning is equal to team 1 probability of losing
+            proba = api_model_response[0]
+        """
 
         proba = 70 #call API with the model
 
