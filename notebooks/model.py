@@ -13,7 +13,11 @@ def train_model(df):
     # Clean and fill missing values in the dataframe
     #df_cleaned = df.dropna()
     df_cleaned_filled = df.fillna(0)
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> da3d30624cedfa210421ab334544855501bdda0c
     # Dividir el dataframe en conjuntos de entrenamiento y prueba
     X = df_cleaned_filled.drop(columns=["target", "matchId"])
     y = df_cleaned_filled['target']

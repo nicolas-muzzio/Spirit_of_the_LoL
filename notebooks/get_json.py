@@ -190,3 +190,25 @@ def reduce_columns_train(all_events_diff):
     all_df = all_events_diff[all_cols]
 
     return all_df
+
+def iterate_files(folder_path_train):
+    data_dict = {}
+
+    # Iterate over files in the folder
+    for filename in os.listdir(folder_path_train):
+        if filename.endswith(".csv"):
+            file_path = os.path.join(folder_path_train, filename)
+
+            # Extract the key from the filename
+            key = filename.replace("Match_Diff_", "").replace(".csv", "")
+
+            # Read the CSV file into a DataFrame
+            df = pd.read_csv(file_path)
+
+            # Delete the first column from the DataFrame
+            df = df.drop(df.columns[0], axis=1)
+
+            # Add the DataFrame to the dictionary with the key
+            data_dict[key] = df
+
+    return data_dict
