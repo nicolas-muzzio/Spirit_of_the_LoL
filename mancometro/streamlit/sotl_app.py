@@ -10,7 +10,7 @@ import requests
 import pickle
 
 #To load the key from .env and get access to stored variables
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 import os
 import sys
 
@@ -25,16 +25,16 @@ from preprocessing.clean_preprocess import preprocess_pred
 
 
 st.set_page_config(
-            page_title="Epic Meter", # Adjust things later
+            page_title="NoobMeter", # Adjust things later
             page_icon="🐍", #Change icon later
             layout="wide", # or centered, wide has more space
             initial_sidebar_state="auto") # collapsed
 
 #Load .env file
-load_dotenv()
+#load_dotenv()
 
 #Get value stored in variable
-api_key = os.getenv("API_KEY")
+api_key = st.secrets["API_KEY"]
 
 def fetch_match(puuid, api_key, region, match_type, count = 1):
     """
@@ -59,7 +59,7 @@ def diagnosis(proba, result):
     Evaluates the probability and the result to give a diagnosis of the match
     """
     if proba > 60 and result == "Defeat":
-        return ":orange[Diagnosis: Fear of Victory]"
+        return ":orange[Diagnosis: GiT GuD]"
     if proba < 40 and result == "Victory":
         return ":green[Diagnosis: Defied the Odds]"
     else:
@@ -223,7 +223,7 @@ match_type_list = {
     }
 
 #Page Title
-st.title('Epic Meter')
+st.title('NoobMeter')
 
 #Main Form to get data from user
 with st.form(key='params_for_api'):
@@ -268,7 +268,7 @@ else:
             flex_tier = ranked_tiers[i]["tier"]
 
 #match id obtention
-matches = fetch_match(puuid, api_key, region, match_type, count = 1)
+matches = fetch_match(puuid, api_key, region, match_type, count = 3)
 
 #Display Ranks
 if no_tier:
@@ -402,6 +402,9 @@ else:
 
 
         def prediction(pred_folder,minute,look_events,columns_of_interest,fitted_model, transformer):
+            """
+            Performs data preprocessing and returns prediction result
+            """
             df = process_folder(pred_folder,minute,look_events)
             df_dif = calculate_event_differences(df)
             df_dif.drop(columns="matchId",inplace=True)
@@ -422,7 +425,7 @@ else:
         if user_participant > 4: #if player is from team 2, its probability of winning is equal to team 1 probability of losing
             proba = round(api_model_response[0][0]*100,2)
 
-        st.write(f"##### Probability of your team winning was {proba}%")
+        st.write(f"##### Probability of your team winning at minute {minute} was {proba}%")
 
         result = match_result(match_final, user_participant)
 
