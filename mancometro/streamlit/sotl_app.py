@@ -2,11 +2,8 @@ import streamlit as st
 
 #To work with requests and APIs
 import json
-
 import datetime
-
 import requests
-
 import pickle
 
 #To load the key from .env and get access to stored variables
@@ -69,9 +66,9 @@ def find_image(champion):
     """
     Try to find the champion image, if it does not exist return a poro image
     """
-    if os.path.exists(f"../../images/champion/{champion}.png"):
-        return f"../../images/champion/{champion}.png"
-    return  f"../../images/champion/4155.png"
+    if os.path.exists(f"../images/champion/{champion}.png"):
+        return f"../images/champion/{champion}.png"
+    return  f"../images/champion/4155.png"
 
 
 def unique_tier(solo_tier,flex_tier):
@@ -309,7 +306,7 @@ else:
         formatted_date = datetime.datetime.fromtimestamp(match_final["info"]["gameStartTimestamp"]/1000).strftime('%Y-%m-%d %H:%M')
 
         #Generates columns for displaying match data
-        col1, col2, col3, col4, col5, col6, col7, col8 = st.columns([1,1,0.14,1,1,1,0.15,1])
+        col1, col2, col3, col4, col5, col6, col7, col8 = st.columns([1,1,0.14,1,1,1,0.14,1])
 
         #Determines the user number of participant (if 0-4 is team 1, if 5-9 is team 2)
         user_participant = match_final["metadata"]["participants"].index(puuid)
