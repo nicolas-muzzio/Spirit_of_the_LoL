@@ -25,7 +25,7 @@ from preprocessing.clean_preprocess import preprocess_pred
 
 
 st.set_page_config(
-            page_title="Mancometer", # Adjust things later
+            page_title="Epic Meter", # Adjust things later
             page_icon="🐍", #Change icon later
             layout="wide", # or centered, wide has more space
             initial_sidebar_state="auto") # collapsed
@@ -58,12 +58,12 @@ def diagnosis(proba, result):
     """
     Evaluates the probability and the result to give a diagnosis of the match
     """
-    if proba > 59 and result == "Defeat":
-        return ":orange[Diagnosis: Manqueada]"
-    if proba < 41 and result == "Victory":
-        return ":green[Diagnosis: Remontada]"
+    if proba > 60 and result == "Defeat":
+        return ":orange[Diagnosis: Fear of Victory]"
+    if proba < 40 and result == "Victory":
+        return ":green[Diagnosis: Defied the Odds]"
     else:
-        return "Diagnosis: Fair"
+        return "Diagnosis: Fair Result"
 
 def find_image(champion):
     """
@@ -74,17 +74,16 @@ def find_image(champion):
     return  f"../../images/champion/4155.png"
 
 
-#def unique_tier(solo_tier,flex_tier):
-
- #   Defines a unique tier for the user in order to get the correct model
-  #  If the user does not have a ranked or solo tier, it returns "SILVER"
-
-
-   # if solo_tier != 0:
-    #    return solo_tier
-    #elif flex_tier != 0:
-     #   return flex_tier
-    #return "SILVER"
+def unique_tier(solo_tier,flex_tier):
+    """
+    Defines a unique tier for the user in order to get the correct model
+    If the user does not have a ranked or solo tier, it returns "SILVER"
+    """
+    if solo_tier != 0:
+        return solo_tier
+    elif flex_tier != 0:
+       return flex_tier
+    return "SILVER"
 
 
 #Dict with code and game modes
@@ -224,7 +223,7 @@ match_type_list = {
     }
 
 #Page Title
-st.title('MANCOMETER')
+st.title('Epic Meter')
 
 #Main Form to get data from user
 with st.form(key='params_for_api'):
@@ -269,7 +268,7 @@ else:
             flex_tier = ranked_tiers[i]["tier"]
 
 #match id obtention
-matches = fetch_match(puuid, api_key, region, match_type, count = 3)
+matches = fetch_match(puuid, api_key, region, match_type, count = 1)
 
 #Display Ranks
 if no_tier:
@@ -283,8 +282,6 @@ else:
 
 st.write(f" ")
 st.write(f" ")
-
-league = "DIAMOND"
 
 if matches == []:
     st.write("No matches found, please check introduced data")
@@ -320,11 +317,43 @@ else:
         #Determines the user champion
         user_champion = match_final["info"]["participants"][user_participant]["championName"]
 
-        #####PREPO OF MATCH_TIMELINE
+        #Info for loading model
+        minute = 10
+        look_events=["CHAMPION_SPECIAL_KILL","CHAMPION_KILL","ELITE_MONSTER_KILL","BUILDING_KILL"]
+        folder_path = "data/"
+        league=unique_tier(solo_tier,flex_tier)
+        pickle_file_path = f"../model/pickles_models/{league}_model.pkl"
+        transformer_file_path = f"../preprocessing/pickles_transformers/{league}_transformer.pkl"
+        with open(pickle_file_path, "rb") as file:
+            # Load the data from the pickle file
+            fitted_model = pickle.load(file)
+        with open(transformer_file_path, "rb") as transformer_file:
+            # Load the transformer from the pickle file
+            transformer = pickle.load(transformer_file)
+        columns_of_interest = ['killType_KILL_ACE',
+        'killType_KILL_FIRST_BLOOD',
+        'killType_KILL_MULTI',
+        'minionsKilled',
+        'monsterType_AIR_DRAGON',
+        'monsterType_CHEMTECH_DRAGON',
+        'monsterType_EARTH_DRAGON',
+        'monsterType_FIRE_DRAGON',
+        'monsterType_HEXTECH_DRAGON',
+        'monsterType_RIFTHERALD',
+        'monsterType_WATER_DRAGON',
+        'totalGold',
+        'towerType_INNER_TURRET',
+        'towerType_OUTER_TURRET']
 
+        #####PREPO OF MATCH_TIMELINE
         with col1:
             st.markdown("##### Date")
             st.write(f"{formatted_date}")
+            st.write("##### Player Side:")
+            if user_participant < 5:
+                st.write("##### :blue[Blue Team]")
+            else:
+                st.write("##### :red[Red Team]")
         with col2:
             st.write("##### Match Type")
             st.write(f"{queues_dict[match_type_key]}")
@@ -370,19 +399,9 @@ else:
                 st.write(f":red[{champion2}]")
 
 
-        minute = 10
-        look_events=["CHAMPION_SPECIAL_KILL","CHAMPION_KILL","ELITE_MONSTER_KILL","BUILDING_KILL"]
-        folder_path = "data/"
-        league="DIAMOND"
-        pickle_file_path = f"../model/pickles_models/{league}_model.pkl"
-        transformer_file_path = f"../preprocessing/pickles_transformers/{league}_transformer.pkl"
-        with open(pickle_file_path, "rb") as file:
-            # Load the data from the pickle file
-            fitted_model = pickle.load(file)
-        with open(transformer_file_path, "rb") as transformer_file:
-            # Load the transformer from the pickle file
-            transformer = pickle.load(transformer_file)
-        def prediction(pred_folder,minute,look_events,columns_of_interest, fitted_model, transformer):
+
+
+        def prediction(pred_folder,minute,look_events,columns_of_interest,fitted_model, transformer):
             df = process_folder(pred_folder,minute,look_events)
             df_dif = calculate_event_differences(df)
             df_dif.drop(columns="matchId",inplace=True)
@@ -393,20 +412,7 @@ else:
             proba = model.predict_proba(X_pred_prep)
             return  proba
 
-        columns_of_interest = ['killType_KILL_ACE',
-        'killType_KILL_FIRST_BLOOD',
-        'killType_KILL_MULTI',
-        'minionsKilled',
-        'monsterType_AIR_DRAGON',
-        'monsterType_CHEMTECH_DRAGON',
-        'monsterType_EARTH_DRAGON',
-        'monsterType_FIRE_DRAGON',
-        'monsterType_HEXTECH_DRAGON',
-        'monsterType_RIFTHERALD',
-        'monsterType_WATER_DRAGON',
-        'totalGold',
-        'towerType_INNER_TURRET',
-        'towerType_OUTER_TURRET']
+
 
         api_model_response = prediction(folder_path,minute,look_events,columns_of_interest, fitted_model, transformer)
 
