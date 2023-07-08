@@ -4,4 +4,6 @@ Credentials/
 images/champion/
 data/predict/
 mancometro/streamlit/data/
+mancometro/streamlit/pages/data/
 mancometro/streamlit/.streamlit
+mancometro/streamlit/pages/.streamlit

@@ -30,18 +30,17 @@ from preprocessing.get_diff import calculate_event_differences
 
 from preprocessing.clean_preprocess import preprocess_pred
 
+#Load .env file
+#load_dotenv()
+
+#Get value stored in variable
+api_key = st.secrets["API_KEY"]
 
 st.set_page_config(
             page_title="NoobMeter", # Adjust things later
             page_icon="🐍", #Change icon later
             layout="wide", # or centered, wide has more space
             initial_sidebar_state="auto") # collapsed
-
-#Load .env file
-#load_dotenv()
-
-#Get value stored in variable
-api_key = st.secrets["API_KEY"]
 
 def fetch_match(puuid, api_key, region, match_type, count = 3):
     """
@@ -88,7 +87,7 @@ def unique_tier(solo_tier,flex_tier):
     if solo_tier != 0:
         return solo_tier
     elif flex_tier != 0:
-       return flex_tier
+        return flex_tier
     return "SILVER"
 
 def prediction(pred_folder,minute,look_events,columns_of_interest,fitted_model, transformer):
@@ -371,7 +370,7 @@ for match in range(len(matches)):
     formatted_date = datetime.datetime.fromtimestamp(match_final["info"]["gameStartTimestamp"]/1000).strftime('%Y-%m-%d %H:%M')
 
     #Generates columns for displaying match data
-    col1, col2, col3, col4, col5, col6, col7, col8 = st.columns([1,1,0.14,1,1,1,0.14,1])
+    col1, col2, col3, col4, col5, col6, col7, col8 = st.columns([1,1,0.18,1,1,1,0.18,1])
 
     #Determines the user number of participant (if 0-4 is team 1, if 5-9 is team 2)
     user_participant = match_final["metadata"]["participants"].index(puuid)
@@ -435,7 +434,7 @@ for match in range(len(matches)):
         death2 = match_final["info"]["participants"][participant+5]["deaths"]
 
         with col3:
-            st.image(find_image(champion1), use_column_width=True)
+            st.image(find_image(champion1), width=25)
         with col4:
             if champion1 == user_champion:
                 st.write(f"**:blue[{champion1}]** :arrow_left:")
@@ -446,7 +445,7 @@ for match in range(len(matches)):
         with col6:
             st.write(f":red[{kill2}/{death2}/{assist2}]")
         with col7:
-            st.image(find_image(champion2), use_column_width=True)
+            st.image(find_image(champion2), width=25)
         with col8:
             if champion2 == user_champion:
                 st.write(f"**:red[{champion2}]** :arrow_left:")
