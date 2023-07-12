@@ -57,51 +57,37 @@ def get_events(json_file,minute,look_events):
 
 
 def transform_events(json_file,minute,look_events):
-    required_columns = ["killerId", "type", "killType", "monsterSubType", "monsterType", "towerType"]
-
+    required_columns = ["killerId", "type", "killType", "monsterSubType", "monsterType", "towerType","buildingType"]
     events = get_events(json_file,minute,look_events)
-
     missing_columns = [col for col in required_columns if col not in events.columns]
-
     for column in missing_columns:
         events[column] = np.nan
-
     events = events[required_columns]
     events = events[events["killerId"] != 0]
-
     events.loc[events["monsterType"] == "DRAGON", "monsterType"] = events.loc[events["monsterType"] == "DRAGON", "monsterSubType"]
-
     events = events.drop(columns=["monsterSubType"])
-
+    events["buildingType"] = events["buildingType"].apply(lambda x: x if x == "INHIBITOR_BUILDING" else "")
     events["kills"] = (events["type"] == "CHAMPION_KILL").astype(int)
-
-    one_hot_encoded = pd.get_dummies(events[['killType', "monsterType", "towerType"]])
-
+    one_hot_encoded = pd.get_dummies(events[['killType', "monsterType", "towerType","buildingType"]])
     events_encoded = pd.concat([events[['killerId', "kills"]], one_hot_encoded], axis=1)
-
     if 'killType' in events_encoded.columns:
         events_encoded.drop(columns=['killType'], inplace=True)
     if 'monsterType' in events_encoded.columns:
         events_encoded.drop(columns=['monsterType'], inplace=True)
     if 'towerType' in events_encoded.columns:
         events_encoded.drop(columns=['towerType'], inplace=True)
-
+    if "buildingType" in events_encoded.columns:
+        events_encoded.drop(columns=["buildingType"], inplace=True)
     events_encoded = events_encoded.groupby("killerId").sum().reset_index()
-
     events_encoded["killerId"] = events_encoded["killerId"] - 1
-
     events_encoded = events_encoded.groupby("killerId").sum().reset_index()
-
     conditions = [
         (events_encoded['killerId'] >= 0) & (events_encoded['killerId'] <= 4),
         (events_encoded['killerId'] >= 5) & (events_encoded['killerId'] <= 9)
     ]
     values = [100, 200]
-
     events_encoded['team'] = np.select(conditions, values, default=0)
-
     events_encoded = events_encoded.groupby("team").sum().reset_index().drop(columns=["killerId"])
-
     return events_encoded
 
 
@@ -133,6 +119,15 @@ def process_folder(folder_path,minute,look_events):
                     all_events = pd.concat([all_events, merge_dfs(json_file,minute,look_events)], ignore_index=True)
             except IndexError:
                 continue
+    columns_to_convert = all_events.columns[~all_events.columns.isin(['matchId', 'target'])]
+    all_events[columns_to_convert] = all_events[columns_to_convert].fillna(0).astype(int)
+    return all_events
+
+def process_one_json(json_file,minute,look_events):
+    json_file = pd.DataFrame(json_file)
+
+    all_events = merge_dfs(json_file,minute,look_events)
+
     columns_to_convert = all_events.columns[~all_events.columns.isin(['matchId', 'target'])]
     all_events[columns_to_convert] = all_events[columns_to_convert].fillna(0).astype(int)
     return all_events
@@ -212,4 +207,3 @@ def iterate_files(folder_path_train):
             data_dict[key] = df
 
     return data_dict
-    

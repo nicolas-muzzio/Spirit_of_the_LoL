@@ -24,7 +24,7 @@ import sys
 sys.path.insert(0,os.path.abspath(".."))
 
 #Packages to handle jsons and predicting
-from preprocessing.get_json import process_folder, check_and_create_columns
+from preprocessing.get_json import process_one_json, check_and_create_columns
 
 from preprocessing.get_diff import calculate_event_differences
 
@@ -94,7 +94,7 @@ def prediction(pred_folder,minute,look_events,columns_of_interest,fitted_model, 
         """
         Performs data preprocessing and returns prediction result
         """
-        df = process_folder(pred_folder,minute,look_events)
+        df = process_one_json(pred_folder,minute,look_events)
         df_dif = calculate_event_differences(df)
         df_dif.drop(columns="matchId",inplace=True)
         df_cc = check_and_create_columns(df_dif, columns_of_interest)
@@ -236,19 +236,23 @@ region_dict = {
 
 #List with columns of interest for data preprocessing
 columns_of_interest = ['killType_KILL_ACE',
-    'killType_KILL_FIRST_BLOOD',
-    'killType_KILL_MULTI',
-    'minionsKilled',
-    'monsterType_AIR_DRAGON',
-    'monsterType_CHEMTECH_DRAGON',
-    'monsterType_EARTH_DRAGON',
-    'monsterType_FIRE_DRAGON',
-    'monsterType_HEXTECH_DRAGON',
-    'monsterType_RIFTHERALD',
-    'monsterType_WATER_DRAGON',
-    'totalGold',
-    'towerType_INNER_TURRET',
-    'towerType_OUTER_TURRET']
+        'killType_KILL_FIRST_BLOOD',
+        'killType_KILL_MULTI',
+        'minionsKilled',
+        'monsterType_AIR_DRAGON',
+        'monsterType_CHEMTECH_DRAGON',
+        'monsterType_EARTH_DRAGON',
+        'monsterType_FIRE_DRAGON',
+        'monsterType_HEXTECH_DRAGON',
+        'monsterType_RIFTHERALD',
+        'monsterType_WATER_DRAGON',
+        'monsterType_ELDER_DRAGON',
+        'monsterType_BARON_NASHOR',
+        'totalGold',
+        'towerType_INNER_TURRET',
+        'towerType_OUTER_TURRET',
+        'towerType_BASE_TURRET',
+        'buildingType_INHIBITOR_BUILDING']
 
 #Dict with region code and its corresponding continent
 macro_region = {
@@ -352,12 +356,7 @@ for match in range(len(matches)):
     #Obtain Match Timeline Data
     path_match_timeline =f"https://{macro_region[str(region)]}.api.riotgames.com/lol/match/v5/matches/{matches[match]}/timeline?api_key={api_key}"
 
-    match_data_timeline = 'data/timeline.json'
-
     match_timeline = requests.get(path_match_timeline).json()
-
-    with open(match_data_timeline, 'w', encoding='utf-8') as f:
-        json.dump(match_timeline, f, ensure_ascii=False, indent=4)
 
     #Obtain Match Final Data
     path_match_timeline =f"https://{macro_region[str(region)]}.api.riotgames.com/lol/match/v5/matches/{matches[match]}?api_key={api_key}"
@@ -384,7 +383,8 @@ for match in range(len(matches)):
     folder_path = "data/"
     league=unique_tier(solo_tier,flex_tier)
     pickle_file_path = f"../model/pickles_models/{league}_model.pkl"
-    transformer_file_path = f"../preprocessing/pickles_transformers/{league}_transformer.pkl"
+    transformer_file_path = f"../preprocessing/pickles_transformers/{minute}/{league}_transformer.pkl"
+
     with open(pickle_file_path, "rb") as file:
         # Load the data from the pickle file
         fitted_model = pickle.load(file)
@@ -452,7 +452,7 @@ for match in range(len(matches)):
             else:
                 st.write(f":red[{champion2}]")
 
-    api_model_response = prediction(folder_path,minute,look_events,columns_of_interest, fitted_model, transformer)
+    api_model_response = prediction(match_timeline,minute,look_events,columns_of_interest, fitted_model, transformer)
 
     if user_participant < 5:
         proba = round(api_model_response[0][1]*100,2)
